@@ -1,0 +1,38 @@
+Var
+
+   RESULTADO : caractere
+   num1 : inteiro
+   num2 : inteiro
+   num3 : inteiro
+   
+   media : real
+Inicio
+
+      ESCREVA ("Sua primeira nota: ")
+      LEIA (num1)
+      
+      ESCREVA ("Sua segunda nota: ")
+      LEIA (num2)
+      
+      ESCREVA ("Sua terceira nota: ")
+      LEIA (num3)
+
+      media <- (num1 + num2 + num3) /3
+      SE ( media < 5) ENTAO
+         RESULTADO <- "i"
+      SENAO
+              SE (media < 7) ENTAO
+                 RESULTADO <- "R"
+              SENAO
+                      SE ( media < 9) ENTAO
+                         RESULTADO <- "B"
+                      SENAO
+                         RESULTADO <- "MB"
+
+                      FIMSE
+              FIMSE
+      FIMSE
+
+      ESCREVA (" A sua menção final foi ", RESULTADO)
+
+Fimalgoritmo
